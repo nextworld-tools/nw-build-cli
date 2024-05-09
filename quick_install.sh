@@ -3,6 +3,8 @@ curl -s https://api.github.com/repos/nextworld-tools/nw-build-cli/releases/lates
 | awk -F'"' '{print $4}' \
 | xargs curl -O
 
+chmod +x nwbuild
+
 mv nwbuild /usr/local/bin/nwbuild
 
 nwbuild reset
