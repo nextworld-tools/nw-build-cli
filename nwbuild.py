@@ -49,7 +49,7 @@ def main(args):
 
     print("Job submitted")
 
-    webbrowser.open(url + '/job/' + job.replace('/', '/job/'), new=0, autoraise=True)
+    webbrowser.open(url + '/job/' + args.job.replace('/', '/job/'), new=0, autoraise=True)
 
 def reset(url, home, directory, env_path, jar_path):
     shutil.rmtree(directory)
